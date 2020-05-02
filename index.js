@@ -4,6 +4,8 @@ const cors = require("cors");
 const path = require("path");
 const exphbs = require("express-handlebars");
 const todoRoutes = require("./routes/todos");
+const Handlebars = require('handlebars');
+const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
 const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3000;
@@ -11,7 +13,8 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 const hbs = exphbs.create({
     defaultLayout: 'main',
-    extname: "hbs"
+    extname: "hbs",
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
 })
 
 //app.use(cors());
@@ -31,7 +34,7 @@ async function start() {
             {
                 useNewUrlParser: true,
                 useFindAndModify: false,
-                //useUnifiedTopology: true
+                useUnifiedTopology: true
             }
         )
 
