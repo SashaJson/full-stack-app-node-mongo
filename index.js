@@ -5,7 +5,7 @@ const path = require("path");
 const exphbs = require("express-handlebars");
 const todoRoutes = require("./routes/todos");
 const Handlebars = require('handlebars');
-const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3000;
