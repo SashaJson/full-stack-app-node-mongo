@@ -30,7 +30,7 @@ app.use(todoRoutes);
 async function start() {
     try {
         await mongoose.connect(
-            "mongodb+srv://SashaJson:123456qwerty@cluster0-52oej.mongodb.net/todos",
+            "mongodb+srv://<name>:<password>@cluster0-52oej.mongodb.net/todos",
             {
                 useNewUrlParser: true,
                 useFindAndModify: false,
