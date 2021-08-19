@@ -1,4 +1,6 @@
-const {Schema, model} = require("mongoose");
+'use strict';
+
+const { Schema, model } = require('mongoose');
 
 const schema = new Schema({
     title: {
@@ -9,7 +11,6 @@ const schema = new Schema({
         type: Boolean,
         default: false
     }
-})
+});
 
-
-module.exports = model("Todo", schema)
+module.exports = model('Todo', schema);
