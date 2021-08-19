@@ -1,14 +1,19 @@
 {
-  "name": "fsam",
+  "name": "full-stack-app-node-mongo",
   "version": "1.0.0",
-  "description": "nodejs, mongoDB, express",
+  "description": "develop app on node, with mongoDB and express",
   "main": "index.js",
   "scripts": {
     "test": "node index",
     "dev": "nodemon index"
   },
-  "keywords": [],
-  "author": "Alexander Shulga",
+  "keywords": [
+    "node",
+    "express",
+    "mongoose",
+    "cors"
+  ],
+  "author": "Alexander Shulha (sashamiller666@gmail.com)",
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
